@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="description" content="ทดสอบ">
+        <meta name="keywords" content="ทดสอบ">
+        <title>แบบทดสอบเรื่อง การสร้าง Web Page ด้วยภาษา html จำนวน 10
+            ข้อ</title>
+        <meta http-equiv="Content-Type"
+            content="text/html; charset=windows-874">
+        <style
+            type="text/css"> a {color: #0000FF; text-decoration: none} a:hover
+          {color: #FF0000; text-decoration: underline} </style>
+        <style type=text/css>body {padding-right : 0px; padding-left : 20px;
+         padding-bottom : 0px; margin : 0px; padding-top : 0px }</style>
+
+        <script language=JavaScript>
+    //กล่องข้อความ ห้ามคลิ๊กขวา
+    let message="No Right Click !!";// Message for the alert box
+    // Don't edit below!
+    function click(e) {
+    if (document.all) {
+    if (event.button == 2) {
+    alert(message);return false;}}
+    if (document.layers) {
+    if (e.which == 3) {
+    alert(message);return false;
+    }}}
+    if (document.layers)
+    {document.captureEvents(Event.MOUSEDOWN);
+    }document.onmousedown=click;
+    // -->
+    </script>
+
+        <script LANGUAGE="JavaScript">
+    let speechstr='"';
+    let A1= new String
+    let A2= new String
+    let A3= new String
+    let A4= new String
+    let A5= new String
+    let A6= new String
+    let A7= new String
+    let A8= new String
+    let A9= new String
+    let A10= new String
+    let CkAns=0
+    
+    function MarkAnswers()
+    {
+       let i=0
+       t=10
+       info="toolbarno,location=no,directories=no,directories=no,status=no,menubar=no,height=400,width=400,"
+       info+="scrollbars=yes,resizable=yes"
+       Answers=window.open("","msgWindow",info)
+       Answers.opener=window;
+       Answers.name="opener";
+       Answers.document.clear;
+       Answers.document.write("<HEAD><TITLE>ตรวจคำตอบ...</TITLE></HEAD>");
+       CkAns=CkAns+1;
+       if (A1.toLowerCase()=="2")
+       {
+          i=i+1;
+       }
+       if (A2.toLowerCase()=="1")
+       {
+          i=i+1;
+       }
+       if (A3.toLowerCase()=="3")
+       {
+          i=i+1;
+       }
+       if (A4.toLowerCase()=="3")
+       {
+          i=i+1;
+       }
+       if (A5.toLowerCase()=="1")
+       {
+          i=i+1;
+       }
+       if (A6.toLowerCase()=="1")
+       {
+          i=i+1;
+       }
+       if (A7.toLowerCase()=="2")
+       {
+          i=i+1;
+       }
+       if (A8.toLowerCase()=="4")
+       {
+          i=i+1;
+       }
+       if (A9.toLowerCase()=="2")
+       {
+          i=i+1;
+       }
+       if (A10.toLowerCase()=="1")
+       {
+          i=i+1;
+       }
+       Answers.document.write("<BODY BGCOLOR=#B6F88B ALINK=#0080C0 LINK=#0080C0 VLINK=#0080C0>");
+       Answers.document.write("<p align=Left><B><FONT SIZE=3 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>ตรวจคำตอบ...ครั้งที่ "+CkAns.toString()+"</B></FONT></p>");
+       Answers.document.write("<p align=Left><B><FONT SIZE=3 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>คุณได้คะแนน "+i.toString()+" / "+t.toString()+"</B></FONT></p>");
+       let currentGrade=new String
+       let currentComment=new String
+       currentGrade=""
+       currentComment=""
+       if (i>=0)
+       {
+          currentGrade="F";
+          currentComment=" แย่จังทำไม่ได้เลย !";
+       }
+       if (i>=5)
+       {
+          currentGrade="D";
+          currentComment=" ทำได้น้อยมาก ควรปรับปรุง";
+       }
+       if (i>=6)
+       {
+          currentGrade="C";
+          currentComment=" ทำได้ไม่เลวเลย อยู่ในระดับพอใช้";
+       }
+       if (i>=7)
+       {
+          currentGrade="B";
+          currentComment=" อยู่ในระดับดีมาก !";
+       }
+       if (i>=8)
+       {
+          currentGrade="A";
+          currentComment=" เก่งมากคุณยอดเยี่ยมที่สุด !";
+       }
+       Answers.document.write('<p align=center><form name="form2"><input type="button" value="ปิดกรอบตรวจคำตอบ" name="Close1" ONCLICK="window.close()"></form></p>');
+       Answers.document.write('<p align=center><b><B><FONT SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC><font size=1><a href="http://www.kr.ac.th" target="_blank">http://www.kr.ac.th</a></font></B></FONT></b></p>');
+    }
+    </script>
+    </head>
+    <body BGCOLOR=#FFFFFF ALINK=#0080C0 LINK=#0080C0 VLINK=#0080C0>
+        <br>
+        <center><b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ทธ0126
+                    เว็บไซต์ธุรกิจดิจิทัล | ห้องเรียน ทธ.1/66(เมือง)
+                    <br>
+                    เรื่อง การสร้างเว็บไซต์ด้วยโปรแกรมภาษา html จำนวน 10 ข้อ<br>
+                    โดย อ.ธนะวัฒน์ เลิศประเสริฐ วิทยาลัยชุมชนนราธิวาส<br>
+                    คำสั่ง เลือก หรือ
+                    เติมคำตอบที่ถูกต้องที่สุด</b></font></center>
+        <form name="form1" ONSUBMIT="MarkAnswers()">
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    1)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000>
+                    การนำข้อมูลจากเครื่องคอมพิวเตอร์เราไปไว้บนอินเตอร์เน็ตเราเรียกกว่าอะไร</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R1"
+                    ONCLICK="A1='1'">Download</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R1"
+                    ONCLICK="A1='2'">Upload</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R1"
+                    ONCLICK="A1='3'">Reload</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R1"
+                    ONCLICK="A1='4'">Move</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    2)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> ข้อใดเป็น Tag เกี่ยวกับลักษณะตัวอักษรตัวหนา
+                </b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R2"
+                    ONCLICK="A2='1'">&lt;B&gt;........&lt;/B&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R2"
+                    ONCLICK="A2='2'">&lt;I&gt;........&lt;/I&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R2"
+                    ONCLICK="A2='3'">&lt;U&gt;........&lt;/U&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R2"
+                    ONCLICK="A2='4'">&lt;BLINK&gt;........&lt;/BLINK&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    3)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> ข้อใดเป็น Tag คำสั่งแสดงภาพบน Homepage
+                </b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R3"
+                    ONCLICK="A3='1'">&lt;IMAGE SRC=URL หรือ
+                ชื่อไฟล์ภาพ&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R3"
+                    ONCLICK="A3='2'">&lt;IMG SRCE=URL หรือ
+                ชื่อไฟล์ภาพ&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R3"
+                    ONCLICK="A3='3'">&lt;IMG SRC=URL หรือ
+                ชื่อไฟล์ภาพ&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R3"
+                    ONCLICK="A3='4'">&lt;IMGSRC=URL หรือ
+                ชื่อไฟล์ภาพ&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    4)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> ข้อใดเป็น Tag คำสั่งการสร้าง Column ของ TABLE
+                </b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R4"
+                    ONCLICK="A4='1'">&lt;TH&gt; &lt;/TH&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R4"
+                    ONCLICK="A4='2'">&lt;TR&gt; &lt;/TR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R4"
+                    ONCLICK="A4='3'">&lt;TD&gt; &lt;/TD&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R4"
+                    ONCLICK="A4='4'">&lt;TABLE> &lt;/TABLE&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    5)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> ข้อใดเป็นการเขียนคำสั่ง Links
+                    ให้เปิดเว็บโรงเรียนซางตาครู้สศึกษา</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R5"
+                    ONCLICK="A5='1'">&lt;a
+                href=http://www.sc.ac.th&gt;ซางตาครู้สศึกษา&lt;/a&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R5"
+                    ONCLICK="A5='2'">&lt;a
+                href=http://www.sc.co.th&gt;ซางตาครู้สศึกษา&lt;/a&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R5"
+                    ONCLICK="A5='3'">&lt;a
+                href=http://www.sc.ac.th&gt;ซางตาครู้สศึกษา&lt;/b&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R5"
+                    ONCLICK="A5='4'">&lt;a
+                href=http://www.cs.ac.th&gt;ซางตาครู้สศึกษา&lt;/a&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    6)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> คำสั่งขึ้นบันทัดใหม่คือข้อใด</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R6"
+                    ONCLICK="A6='1'">&lt;BR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R6"
+                    ONCLICK="A6='2'">&lt;HR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R6"
+                    ONCLICK="A6='3'">&lt;TR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R6"
+                    ONCLICK="A6='4'">&lt;B&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    7)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> ข้อใดเป็นการใส่สีพื้นหลังให้กับ
+                    Homepage</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R7"
+                    ONCLICK="A7='1'">&lt;bodybgcolor=yellow&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R7"
+                    ONCLICK="A7='2'">&lt;body bgcolor=yellow&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R7"
+                    ONCLICK="A7='3'">&lt;body bgcoler=yellow&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R7"
+                    ONCLICK="A7='4'">&lt;body background
+                color=yellow&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    8)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000>
+                    ข้อใดเป็นการใส่รูปภาพเป็นพื้นหลัง</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R8"
+                    ONCLICK="A8='1'">&lt;body bgcolor=yellow&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R8"
+                    ONCLICK="A8='2'">&lt;body background=yellow&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R8"
+                    ONCLICK="A8='3'">&lt;body bgcoler=img1.gif&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R8"
+                    ONCLICK="A8='4'">&lt;body background=img1.jpg&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    9)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000> คำสั่งตีเส้นคือข้อใด</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R9"
+                    ONCLICK="A9='1'">&lt;BR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R9"
+                    ONCLICK="A9='2'">&lt;HR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R9"
+                    ONCLICK="A9='3'">&lt;TR&gt;</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R9"
+                    ONCLICK="A9='4'">&lt;B&gt;</font><br>
+            <hr align=Left WIDTH=95%>
+            <b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ข้อที่
+                    10)</b></font><br><b><font SIZE=2 FACE="MS Sans Serif"
+                    COLOR=#000000>
+                    การเขียนโฮมเพจเวลาบันทึกต้องบันทึกไฟล์นามสกุลใด</b></font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R10"
+                    ONCLICK="A10='1'">*.html</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R10"
+                    ONCLICK="A10='2'">*.hltm</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R10"
+                    ONCLICK="A10='3'">*.doc</font><br>
+            <font SIZE=2 FACE="MS Sans Serif"
+                COLOR=#000000>&nbsp;&nbsp;&nbsp;<input type="radio" name="R10"
+                    ONCLICK="A10='4'">*.jpg</font><br>
+            <hr align=Left WIDTH=95%>
+            <p></p><p align=center><input type="button" value="ตรวจคำตอบ"
+                    name="markbtn" ONCLICK="MarkAnswers()"></p><br>
+        </form>
+    </body>
+</html>
