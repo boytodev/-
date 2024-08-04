@@ -1,140 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name="description" content="ทดสอบ">
-        <meta name="keywords" content="ทดสอบ">
-        <title>แบบทดสอบเรื่อง การสร้าง Web Page ด้วยภาษา html จำนวน 10
-            ข้อ</title>
-        <meta http-equiv="Content-Type"
-            content="text/html; charset=windows-874">
-        <style
-            type="text/css"> a {color: #0000FF; text-decoration: none} a:hover
-          {color: #FF0000; text-decoration: underline} </style>
-        <style type=text/css>body {padding-right : 0px; padding-left : 20px;
-         padding-bottom : 0px; margin : 0px; padding-top : 0px }</style>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet" />
+        <link
+            href="https://getbootstrap.com/docs/5.3/assets/css/docs.css"
+            rel="stylesheet" />
 
-        <script language=JavaScript>
-    //กล่องข้อความ ห้ามคลิ๊กขวา
-    let message="No Right Click !!";// Message for the alert box
-    // Don't edit below!
-    function click(e) {
-    if (document.all) {
-    if (event.button == 2) {
-    alert(message);return false;}}
-    if (document.layers) {
-    if (e.which == 3) {
-    alert(message);return false;
-    }}}
-    if (document.layers)
-    {document.captureEvents(Event.MOUSEDOWN);
-    }document.onmousedown=click;
-    // -->
-    </script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kanit&display=swap"
+            rel="stylesheet" />
+        <style>
+      body {
+        font-family: "Kanit", serif;
+      }
+      *{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+    </style>
 
-        <script LANGUAGE="JavaScript">
-    let speechstr='"';
-    let A1= new String
-    let A2= new String
-    let A3= new String
-    let A4= new String
-    let A5= new String
-    let A6= new String
-    let A7= new String
-    let A8= new String
-    let A9= new String
-    let A10= new String
-    let CkAns=0
-    
-    function MarkAnswers()
-    {
-       let i=0
-       t=10
-       info="toolbarno,location=no,directories=no,directories=no,status=no,menubar=no,height=400,width=400,"
-       info+="scrollbars=yes,resizable=yes"
-       Answers=window.open("","msgWindow",info)
-       Answers.opener=window;
-       Answers.name="opener";
-       Answers.document.clear;
-       Answers.document.write("<HEAD><TITLE>ตรวจคำตอบ...</TITLE></HEAD>");
-       CkAns=CkAns+1;
-       if (A1.toLowerCase()=="2")
-       {
-          i=i+1;
-       }
-       if (A2.toLowerCase()=="1")
-       {
-          i=i+1;
-       }
-       if (A3.toLowerCase()=="3")
-       {
-          i=i+1;
-       }
-       if (A4.toLowerCase()=="3")
-       {
-          i=i+1;
-       }
-       if (A5.toLowerCase()=="1")
-       {
-          i=i+1;
-       }
-       if (A6.toLowerCase()=="1")
-       {
-          i=i+1;
-       }
-       if (A7.toLowerCase()=="2")
-       {
-          i=i+1;
-       }
-       if (A8.toLowerCase()=="4")
-       {
-          i=i+1;
-       }
-       if (A9.toLowerCase()=="2")
-       {
-          i=i+1;
-       }
-       if (A10.toLowerCase()=="1")
-       {
-          i=i+1;
-       }
-       Answers.document.write("<BODY BGCOLOR=#B6F88B ALINK=#0080C0 LINK=#0080C0 VLINK=#0080C0>");
-       Answers.document.write("<p align=Left><B><FONT SIZE=3 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>ตรวจคำตอบ...ครั้งที่ "+CkAns.toString()+"</B></FONT></p>");
-       Answers.document.write("<p align=Left><B><FONT SIZE=3 FACE="+speechstr+"MS Sans Serif"+speechstr+" COLOR=#0033CC>คุณได้คะแนน "+i.toString()+" / "+t.toString()+"</B></FONT></p>");
-       let currentGrade=new String
-       let currentComment=new String
-       currentGrade=""
-       currentComment=""
-       if (i>=0)
-       {
-          currentGrade="F";
-          currentComment=" แย่จังทำไม่ได้เลย !";
-       }
-       if (i>=5)
-       {
-          currentGrade="D";
-          currentComment=" ทำได้น้อยมาก ควรปรับปรุง";
-       }
-       if (i>=6)
-       {
-          currentGrade="C";
-          currentComment=" ทำได้ไม่เลวเลย อยู่ในระดับพอใช้";
-       }
-       if (i>=7)
-       {
-          currentGrade="B";
-          currentComment=" อยู่ในระดับดีมาก !";
-       }
-       if (i>=8)
-       {
-          currentGrade="A";
-          currentComment=" เก่งมากคุณยอดเยี่ยมที่สุด !";
-       }
-       Answers.document.write('<p align=center><form name="form2"><input type="button" value="ปิดกรอบตรวจคำตอบ" name="Close1" ONCLICK="window.close()"></form></p>');
-       Answers.document.write('<p align=center><b><B><FONT SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC><font size=1><a href="http://www.kr.ac.th" target="_blank">http://www.kr.ac.th</a></font></B></FONT></b></p>');
-    }
-    </script>
+        <title>ncc043-อายุบ-อับดุลเลาะ</title>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
-    <body BGCOLOR=#FFFFFF ALINK=#0080C0 LINK=#0080C0 VLINK=#0080C0>
+    <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a
+                    class="navbar-brand"
+                    href="https://www.ncc.ac.th"
+                    title="https://www.ncc.ac.th"
+                    target="_blank"><img src="images/640px-Logo_bcca.png"
+                        width="50px" /></a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                                href="/"><button
+                                    type="button" class="btn btn-warning">
+                                    หน้าหลัก
+                                </button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page1.html"><button
+                                    type="button"
+                                    class="btn btn-warning">
+                                    แหล่งท่องเที่ยว
+                                </button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page2.html"><button
+                                    type="button"
+                                    class="btn btn-warning">
+                                    เว็บไซต์น่าสนใจ
+                                </button></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="page3.html"><button
+                                    type="button"
+                                    class="btn btn-primary">
+                                    แบบทดสอบ
+                                </button></a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input
+                            class="form-control me-2"
+                            type="search"
+                            placeholder="Search"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">
+                            Search
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
         <br>
         <center><b><font SIZE=2 FACE="MS Sans Serif" COLOR=#0033CC>ทธ0126
                     เว็บไซต์ธุรกิจดิจิทัล | ห้องเรียน ทธ.1/66(เมือง)
